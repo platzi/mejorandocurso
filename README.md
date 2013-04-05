@@ -1,15 +1,11 @@
-![Mejorandola](http://miguelnieva.com/img/mejorandola-grande.png)
+Adaptado de:
+======
 
-## Material Original de Cursos
+[Pagina de twitter en github](http://twitter.github.com/)
 
-<ul>
-<br />
-<br />
-<li>**Te recomendamos siempre leer cada "README.md" en cada carpeta.**</li>
+LICENSE
+------------
 
-<li>Ubica tu curso y dentro de cada carpeta encontrarás todas las clases divididas por tema.</li>
+Copyright 2012 Twitter, Inc.
 
-<li>Puedes dar un Fork al repositorio y estar actualizado siempre con GIT ó puedes descargar los .ZIP de cada curso, incluidos
-en su carpeta.</li>
-
-<ol>
+Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0

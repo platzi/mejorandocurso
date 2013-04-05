@@ -1,5 +1,0 @@
-Json Visualizer
-http://chris.photobooks.com/json/
-
-Google Ajax Api
-https://developers.google.com/speed/libraries/?hl=es
