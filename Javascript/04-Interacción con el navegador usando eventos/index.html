@@ -1,0 +1,124 @@
+<html>
+<head>
+ 
+<script type="text/javascript" src="static/jquery-1.9.0.js"></script>
+ 
+<style type="text/css">
+	#mouseover-outerBox1, #mouseenter-outerBox1,
+	#mouseover-outerBox2, #mouseenter-outerBox2{
+		margin:8px;
+		border:1px groove #999966;
+		background-color : #999966;
+		width:150px;
+		height:150px;
+		color:white;
+	}
+	#mouseover-innerBox2, #mouseenter-innerBox2{
+		margin:8px 8px 8px 16px;
+		border:1px groove #0000FF;
+		background-color : #0000FF;
+		width:100px;
+		height:100px;
+		color:white;
+	}
+	span{
+		padding:8px;
+	}
+	.content{
+		width:500px;
+		height:250px;
+	}
+	.container1{
+		float:left;
+		padding-right:16px;
+	}
+</style>
+ 
+</head>
+<body>
+  <h1>jQuery diferencia de mouseover() vs mouseenter()</h1>
+ 
+<div class="content">
+  <div class="container1">
+	  <span>mouseover() - sin hijos</span>
+	  <div id="mouseover-outerBox1">OuterBox
+	  </div>
+	  <span id="mouseover-msg1">#mouseover is fired : 0</span>
+  </div>
+ 
+  <div class="container1">
+  	  <span>mouseenter() - sin hijos</span>
+	  <div id="mouseenter-outerBox1">OuterBox
+	  </div>
+	  <span id="mouseenter-msg1">#mouseenter is fired : 0</span>
+  </div>
+</div>
+ 
+ 
+ 
+<div class="content">
+  <div class="container1">
+	  <span>mouseover() - con hijos</span>
+	  <div id="mouseover-outerBox2">OuterBox
+	  	<div id="mouseover-innerBox2">InnerBox
+	  	</div>
+	  </div>
+	  <span id="mouseover-outer-msg2">#mouseover : 0</span>
+          <br/>
+	  <span id="mouseover-inner-msg2">#mouseover  : 0</span>
+  </div>
+ 
+  <div class="container1">
+  	  <span>mouseenter() - con hijos</span>
+	  <div id="mouseenter-outerBox2">OuterBox
+	  	<div id="mouseenter-innerBox2">InnerBox
+	  	</div>
+	  </div>
+	  <span id="mouseenter-outer-msg2">#mouseenter : 0</span>
+          <br/>
+	  <span id="mouseenter-inner-msg2">#mouseenter : 0</span>
+  </div>
+</div>
+ 
+<script type="text/javascript">
+ 
+//example 1
+var mouseover1=1;
+$('#mouseover-outerBox1').mouseover(function(event) {
+  $('#mouseover-msg1').text('#mouseover : ' + mouseover1++)
+});
+ 
+var mouseenter1=1;
+$('#mouseenter-outerBox1').mouseenter(function(event) {
+  $('#mouseenter-msg1').text('#mouseenter  : ' + mouseenter1++)
+});
+ 
+//example 2
+var mouseoverouter2=1;
+$('#mouseover-outerBox2').mouseover(function(event) {
+  $('#mouseover-outer-msg2')
+              .text('#mouseover : ' + mouseoverouter2++)
+});
+ 
+var mouseoverinner2=1;
+$('#mouseover-innerBox2').mouseover(function(event) {
+  $('#mouseover-inner-msg2')
+              .text('#mouseover : ' + mouseoverinner2++)
+});
+ 
+var mouseenterouter2=1;
+$('#mouseenter-outerBox2').mouseenter(function(event) {
+  $('#mouseenter-outer-msg2')
+              .text('#mouseenter : ' + mouseenterouter2++)
+});
+ 
+var mouseenterinner2=1;
+$('#mouseenter-innerBox2').mouseenter(function(event) {
+  $('#mouseenter-inner-msg2')
+               .text('#mouseenter : ' + mouseenterinner2++)
+});
+ 
+</script>
+Fuente : http://www.mkyong.com/jquery/different-between-mouseover-and-mouseenter-in-jquery/
+</body>
+</html>

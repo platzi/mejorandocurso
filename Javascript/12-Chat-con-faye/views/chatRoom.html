@@ -1,0 +1,14 @@
+doctype 5 
+html(lang="en") 
+    head 
+        script(src="jquery.js") 
+        script(src="faye/client.js") 
+        script(src="main.js") 
+    body 
+        h1 Chat faye 
+        p 
+            input#mensaje 
+            button#enviar enviar mensaje 
+        ul#mensajes 
+            each message in messages.reverse() 
+                li #{message.text}

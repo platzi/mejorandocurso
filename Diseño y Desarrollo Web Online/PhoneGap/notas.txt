@@ -1,0 +1,8 @@
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+	
+	<script type="text/javascript" src="ui/jquery.ui.map.js"></script>
+	<script type="text/javascript" src="ui/jquery.ui.map.services.js"></script>
+	<script type="text/javascript" src="ui/jquery.ui.map.extensions.js"></script>
+			
+	imgur_client_id = "1841367133e3c0151755f5632959b990";
+	instagram_client_id = "fc8041d4af1544a2939c3f5a9a1ef8cf";

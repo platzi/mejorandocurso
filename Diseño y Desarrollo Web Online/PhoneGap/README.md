@@ -1,0 +1,9 @@
+## PhoneGap + jQuery Mobile - Adrián Catalán [@ykro] (http://twitter.com/ykro)
+<br />
+
+
+Puedes descargar todo el [contenido en .zip] (https://github.com/MejorandoLaClase/MejorandoCurso/blob/master/Dise%C3%B1o%20y%20Desarrollo%20Web%20Online/PhoneGap/PhoneGap.zip?raw=true).
+
+Desarrollo de una aplicación móvil integrando el API de instagram y utilizando jQuery Mobile.
+
+Esta carpeta comprende el ejemplo y recomendamos mucho leer la explicación y conceptos dentro de la plataforma para entenderlo completamente.

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>UI</title>
+  <meta name="generator" content="TextMate http://macromates.com/">
+  <meta name="author" content="Arturo Jamaica Garcia">
+  <script src="socket.io/socket.io.js" type="text/javascript" ></script>  
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    window.client = io.connect(window.location.href);
+
+    client.on('connect', function(socket){
+      console.log('io running');
+
+    });
+
+    client.on('init', function(data){
+      console.log('marks', data);
+      $.each(data.marks,function(i,mark){
+
+        config ={
+          x : mark.ib,
+          y : mark.jb,
+          titulo : mark.title
+        }
+
+        maker_creado = window.crear_marker(config);
+
+      });
+
+    });
+
+    client.on('new', function(data){
+      console.log('marks', data);
+      $.each(data.marks,function(i,mark){
+
+        config ={
+          x : mark.ib,
+          y : mark.jb,
+          titulo : mark.title
+        }
+
+        maker_creado = window.crear_marker(config);
+
+      });
+    });
+  });
+  </script>
+  <script>
+   
+                
+  $(document).ready(function(){
+      
+        var map;
+      var markerSelected;
+      var markers = [];
+        var parliament = new google.maps.LatLng(4.59, -74.07);
+      
+      function initialize(){
+              var mapOptions = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(4.59, -74.07),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+             
+                    map = new google.maps.Map(document.getElementById('map_canvas'),
+                    mapOptions);
+                    
+                       google.maps.event.addListener(map,'mouseup', function() {
+
+                        marker = window.crear_marker();
+                        markers.push(marker);
+                    });
+                    
+                      window.crear_marker = function _newGoogleMapsMarker(config){
+                          
+                             if(config && config.x && config.y ){
+                                var init_position = new google.maps.LatLng(config.x, config.y);
+
+                            }else{
+                                var init_position = new google.maps.LatLng(4.59, -74.07);
+
+                            }                    
+
+                            config = config || {};
+
+                            var r = new google.maps.Marker({
+                                map: map,
+                                title: config.titulo || "" ,
+                                position: init_position,
+                                draggable:true,
+                          animation: google.maps.Animation.DROP
+                            });
+                            
+                             google.maps.event.addListener(r, 'click', function() {
+                                     markerSelected = r;
+                                     $('#id_latitud').val(r.position.lat());
+                                     $('#id_longitud').val(r.position.lng());
+                                     $('#id_mensaje').val(r.title);
+                                });
+                            
+                            
+                            return r
+                      };
+        }
+     
+     $('form').submit(function(e){
+         e.preventDefault();
+         if(markerSelected){
+             markerSelected.title = $('#id_mensaje').val();
+              $.post('/mark/new',{
+                title : markerSelected.title,
+          ib    : markerSelected.position.ib,
+          jb    : markerSelected.position.jb
+              }, function(data){
+                debugger;
+              })
+         }else{
+             $('#id_mensaje').val("");
+         }
+         
+     });
+     
+                
+        google.maps.event.addDomListener(window, 'load', initialize);
+                
+    });
+    
+    
+  </script>
+  
+</head>
+<body>
+    
+    <form method="post" >
+         <label for="id_latitud">Latitud:</label></th><td><input type="text" name="latitud" id="id_latitud" />
+         <label for="id_longitud">Longitud:</label></th><td><input type="text" name="longitud" id="id_longitud" />
+              <label for="id_mensaje">Mensaje:</label></th><td><input type="text" name="mensaje" id="id_mensaje" />
+          <input type="submit" id="send" value="Guardar">
+              
+        </form>
+
+         <div id="map_canvas" style="width:500px; height:500px"></div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+  <!-- Llamamos jquery -->
+	<script type="text/javascript" src="static/jquery-1.9.0.js"></script>
+  <!-- Llamamos mustache.js -->
+	<script type="text/javascript" src="static/mustache.js"></script>	
+	
+	<script>
+  /* Declaramos la funcion que se ejecutara cuando el DOM este listo */
+  var onReady = function() {
+    /* Creamos una variable person con cada variable y su valor */
+    var person = {
+        nombre: "Arturo",
+        apellido: "Jamaica",
+        url: "http://mejorando.la"
+    };
+    /* Creamos el template, las llaves significan aqui se imprimira lo que hay dentro de ellas, por ejemplo {{nombre}} imprimira el nombre */
+    var template = "<h1>{{nombre}} {{apellido}}</h1>Blog: {{url}}";
+    /* renderizamos template con los datos de person */
+    var html = Mustache.to_html(template, person);
+    /* Pegamos el html en el id #ejemplo */
+    $('#ejemplo').html(html);
+  };
+  /* Ejecutamos onReady cuando el DOM halla cargado */
+	$(document).on('ready', onReady);
+  </script>
+</head>
+<body>
+    <div id="ejemplo"></div>
+
+
+</body>
+</html>

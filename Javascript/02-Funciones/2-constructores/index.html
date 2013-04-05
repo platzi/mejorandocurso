@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Restaurant = function(config){
+			this.direccion = config.direccion || '';
+		}
+		
+		Restaurant.prototype.comer = function(){
+			return 'mmmm...';
+		}
+
+		var ilDiabolo = new Restaurant({
+			direccion : 'Lopez Cotilla 1904'
+		});
+
+		console.log( ilDiabolo );
+		console.log( ilDiabolo.comer() );
+		
+		console.log('ilDiabolo instanceof Restaurant == true',ilDiabolo instanceof Restaurant);
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

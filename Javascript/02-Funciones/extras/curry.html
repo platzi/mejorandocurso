@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Contador = function(valorInicial){
+			var valor = valorInicial
+			return function(n){
+				if(!n){
+					return valor;
+				}
+
+				return Contador(valor + n);
+			}
+		}
+
+		var contador = Contador(10);
+
+		console.log( contador(6)(7)() );
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

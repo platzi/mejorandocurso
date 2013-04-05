@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block section %}
+<section class="ff-container">
+
+	<input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
+	<label for="select-type-all" class="ff-label-type-all">All</label>
+	
+	{% for boton in menu %}
+	<input id="select-type-{{boton.numero_clase}}" name="radio-set-1" type="radio" class="ff-selector-type-{{boton.numero_clase}}" />
+	<label for="select-type-{{boton.numero_clase}}" class="ff-label-type-{{boton.numero_clase}}">{{boton.nombre}}</label>
+	{% endfor %}
+	<div class="clr"></div>
+	
+	<ul class="ff-items">
+		{% for item in libros %}
+		<li class="ff-item-type-{{items.clase.numero_clase}}">
+			{{item}}
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endblock %}
+

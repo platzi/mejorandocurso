@@ -1,0 +1,17 @@
+{
+    "version": "0.0.1-3",
+    "dependencies": {
+        "express": "3.0.4",
+        "jade": "0.27.7",
+        "consolidate": "0.5.0",
+        "socket.io": "0.9.11"
+    },
+    "subdomain": "siedrix6.curso-mejorandola",
+    "scripts": {
+        "start": "server.js"
+    },
+    "engines": {
+        "node": "0.8.x"
+    },
+    "name": "curso-mejorandola-latinoamerica"
+}

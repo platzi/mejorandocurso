@@ -1,0 +1,45 @@
+body {
+	background: #eeeeee;
+}
+
+footer {
+	line-height: 0.5em;
+	color: #666;
+	font-size: 0.8em;
+	padding-top: 30px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+	display: inline-block;
+}
+
+header span {
+	display: inline-block;
+	font-size: 2em;
+	margin-left: 5px;
+}
+#boton {
+	padding: 5px;
+}
+
+#main, #creditos {
+	margin: 0 auto;
+	width: 480px;
+}
+
+#main {
+	background: white;
+	border-radius: 0.4em;
+	border: 1px solid #bbbbbb;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+	padding: 1em;
+}
+
+#todo-input {
+	border: 1px solid #666;
+	padding: 5px;
+	border-radius: 4px;
+	width: 400px;
+}

@@ -1,0 +1,59 @@
+<html>
+<head>
+  <!-- Llamamos jquery -->
+	<script type="text/javascript" src="static/jquery-1.9.0.js"></script>
+  <!-- Llamamos mustache -->
+	<script type="text/javascript" src="static/mustache.js"></script>	
+	
+	<script>
+    $(document).ready(function() {
+      /* Template de como se mostrara un resultado */
+      var template = '<li><img src="{{img}}" />{{nombre}} </li>';
+      /* Cuando halla un evento click en el id #search ejecute la funcion */
+      $("#search").click(function(){
+        /* Limpio el elemento con id #search */
+        $("#search").val("");
+        /* Limpio el elemento con id #videos ul */
+        $("#videos ul").html("");
+        return;
+      });
+      /* cuando halla un evento keyup ejecuta la funcion */
+      $("#search").keyup(function (e) {
+        /* si lo que se presiono fue la tecla enter seguimos */
+        if (e.keyCode == 13) {
+          /* Obtengo el json de la busqueda de lo que busque con un callback */
+          $.getJSON("http://gdata.youtube.com/feeds/videos?vq="+$("#search").val()+"&max-results=50&alt=json-in-script&callback=?",
+          function(data) {
+            /* Mando mi data.feed.entry a consola */
+            console.log(data.feed.entry);
+            /* un forEach para recorrer cada item */
+            $.each(data.feed.entry, function(i,item){
+              /* definimos entry con el titulo y la imagen del video */
+              var entry = {
+                nombre: item.title.$t,
+                img: item.media$group.media$thumbnail[0].url
+              };
+              /* Renderizamos nuestro template con el contenido de entry */
+              var html = Mustache.to_html(template, entry);
+              console.log(html);
+              /* Agregamos html al ul dentro del elemento con id #videos */
+              $(html).appendTo("#videos ul");
+              console.log(item.title.$t);
+            });
+
+          });
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+    
+    <div id="ejemplo">
+        <input type="text" id="search" />
+        <div id="videos"><ul></ul></div>
+    </div>
+
+
+</body>
+</html>

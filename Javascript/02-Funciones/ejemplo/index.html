@@ -1,0 +1,73 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Curso = function(config){
+			config = config || {};
+			var clases = [];
+			var self = {
+				nombre  : config.nombre  || '',
+				bloques : config.bloques || [],
+				dias    : config.dias    || [],
+				tomarAsistencia : function(asistentes){
+					clases.push(asistentes);
+				}
+			}
+
+
+			self.getAsistenciaPorClase = function(n){
+				return clases[n];
+			}
+
+			return self;
+		}
+
+		var StartupCyrcle = function(config){
+			config = config || {};
+			var precio = config.precio || 0;
+			var self = Curso(config);
+			self.organizador = config.organizador || 'mac';
+			self.obtenerCosto = function()
+			{
+				return precio * 8 + 28; //self.bloques.reduce;
+			}
+			return self;
+		} 
+
+		var curso = StartupCyrcle({
+			nombre  : 'Javascript and Hacking',
+			bloques : [
+				{
+					nombre   : "Introduccion a Javascript",
+					sessions : 4
+				},
+				{
+					nombre   : "¿Qué es MV*?",
+					sessions : 4
+				}
+			],
+			dias : ['martes', 'jueves'],
+			precio : 60,
+			organizador : 'MAC'
+		});
+
+		curso.tomarAsistencia(['hugo','paco']);
+		curso.tomarAsistencia(['hugo','luis']);
+
+		console.log( 'curso', curso );
+		console.log( curso.getAsistenciaPorClase(1) );
+		console.log( curso.obtenerCosto());
+		console.log( curso.organizador);
+
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

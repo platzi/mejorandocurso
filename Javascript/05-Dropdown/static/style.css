@@ -1,0 +1,25 @@
+#toolbar{
+	background: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px 100px;	
+}
+
+#dropdown-button-2,
+#dropdown-button{
+	float: left;
+	width: 200px;
+	background: white;
+	margin-left: 10px;
+}
+
+.dropdown-container{
+	position: absolute;
+	background: white;
+	border: grey solid 1px;
+	width: 300px;
+	top: 0;
+	left: 0;
+}

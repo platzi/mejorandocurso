@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Persona = function(nombre){
+			var self = {};
+			self.nombre = nombre || 'john doe';
+			self.decirNombre = function(){
+				return 'Mi nombre es '+ this.nombre;
+			}
+
+			return self;
+		}
+
+		var siedrix = Persona('Siedrix');
+
+		console.log( siedrix.decirNombre() );
+
+		var Perico = function(nombre){
+			var self = {};
+			self.nombre = nombre || 'john doe';
+
+			return self;			
+		}
+
+		var paulie = Perico('Paulie');
+
+		console.log( siedrix.decirNombre.call(paulie) );
+
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block section %}
+	{% if form.errors %}
+	     <p style="color: red;">
+	    {{ form.errors|pluralize }}.
+	     </p>
+	{% endif %}
+	<form action="" method="post"> 
+		{% csrf_token %}
+	<table>
+	       {{ form.as_table }}
+	<input type="submit">
+	</table>
+	
+{% endblock %}

@@ -1,0 +1,3 @@
+instagram_client_id = "fc8041d4af1544a2939c3f5a9a1ef8cf";
+
+https://api.instagram.com/v1/tags/instafood/media/recent?client_id=fc8041d4af1544a2939c3f5a9a1ef8cf

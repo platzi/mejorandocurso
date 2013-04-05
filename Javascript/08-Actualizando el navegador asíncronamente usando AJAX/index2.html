@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="static/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="static/mustache.js"></script>
+	<script>
+	$(document).ready(function(){
+			var template = '<li><iframe src="{{iframe}}" />{{nombre}} </li>';
+
+			$('#cajaDeBusqueda').keyup(function(e){
+			if (e.keyCode == 13){
+				console.log($(this).val());
+				$.getJSON("http://gdata.youtube.com/feeds/videos?vq="+ $("#cajaDeBusqueda").val() +"&max-results=50&alt=json-in-script&callback=?",function(data){
+
+						$.each(data.feed.entry,function(i,item){
+								var video = {
+									img : item.media$group.media$thumbnail[0].url,
+									nombre : item.title.$t,
+									iframe : item.media$group.media$content[0].url
+								};
+
+								var html = Mustache.to_html(template,video);
+								console.log(html);
+
+								$(html).appendTo("#results ul");
+
+						});
+
+				});
+				return false;
+			}
+
+		});
+
+		$("#cajaDeBusqueda").on("click",function(){
+			$(this).val("");
+			$("#results ul").html("");
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<input type="search" id="cajaDeBusqueda"/>
+	<div id="results">
+		<ul>
+		</ul>
+
+	</div>
+</body>
+</html>

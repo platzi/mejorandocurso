@@ -1,0 +1,11 @@
+{
+	"name":"faye",
+	"version":"0.0.1",
+	"dependencies":{
+		"faye":"0.8.9",
+		"express":"3.1.0",
+		"consolidate":"0.8.0",
+		"jade":"0.28.2",
+		"validator":"*"	
+	}
+}

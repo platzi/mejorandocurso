@@ -1,0 +1,10 @@
+{
+	"name" : "Gui",
+	"version" : "0.0.1",
+	"dependencies" : {
+		"express" : "*",
+		"swig" : "*",
+		"consolidate" : "*",
+		"mongoose":"*"
+	}
+}

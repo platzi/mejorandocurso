@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script type="text/javascript">
+		// http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+		var contador = (function(valorInicial){
+			var valor = valorInicial || 0;
+
+			return {
+				sumar : function(n){
+					valor = valor + n;
+				},
+				resultado : function(){
+					return valor;
+				}
+			}
+		})(10);
+
+		console.log('valor inicial',contador.resultado());
+		contador.sumar(6);
+		contador.sumar(7);
+		console.log('resultado',contador.resultado());
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

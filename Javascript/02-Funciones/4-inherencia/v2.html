@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Restaurant = function(config){
+			config = config || {};
+
+			var self = {};
+			self.direccion = config.direccion || '';
+			self.menu      = config.menu      || [];
+			self.comer     = function(){
+				return 'mmmm...';
+			}
+
+			self.getMenu   = function() {
+				return this.menu;
+			};
+
+			return self;
+		}
+
+		var Pizzeria = function	(config){
+			config = config || {};
+
+			var self = Restaurant(config);
+			self.pizzas    = config.pizzas    || [];
+			self.getPizzas = function() {
+				return this.pizzas;
+			};	
+
+			return self;	
+		}
+
+		var ilDiabolo = Pizzeria({
+			direccion : 'Lopez Cotilla 1904',
+			menu      : ['pizza', 'lasana'],
+			pizzas    : ['bianca','4 quesos']
+		});
+
+		console.log( ilDiabolo );
+		console.log( ilDiabolo.comer() );
+		console.log('menu', ilDiabolo.getMenu() );
+		console.log('menu', ilDiabolo.getPizzas() );
+
+		console.log('ilDiabolo instanceof Restaurant',ilDiabolo instanceof Restaurant);
+		console.log('ilDiabolo instanceof Pizzeria'  ,ilDiabolo instanceof Pizzeria);
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

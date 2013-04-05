@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Restaurant = function(config){
+			config = config || {};
+			this.direccion = config.direccion || '';
+			this.menu      = config.menu      || [];
+		}
+
+		Restaurant.prototype.comer = function(){
+			return 'mmmm...';
+		}
+
+		Restaurant.prototype.getMenu = function() {
+			return this.menu;
+		};
+
+		var Pizzeria = function	(config){
+			config = config || {};
+			this.direccion = config.direccion || '';
+			this.menu      = config.menu      || [];
+			this.pizzas    = config.pizzas    || [];
+		}
+
+		Pizzeria.prototype = new Restaurant;
+
+		Pizzeria.prototype.getPizzas = function() {
+			return this.pizzas;
+		};		
+
+		var ilDiabolo = new Pizzeria({
+			direccion : 'Lopez Cotilla 1904',
+			menu      : ['pizza', 'lasana'],
+			pizzas    : ['bianca','4 quesos']
+		});
+
+		console.log( ilDiabolo );
+		console.log( ilDiabolo.comer() );
+		console.log('menu', ilDiabolo.getMenu() );
+		console.log('pizzas', ilDiabolo.getPizzas() );
+
+		console.log('ilDiabolo instanceof Restaurant',ilDiabolo instanceof Restaurant);
+		console.log('ilDiabolo instanceof Pizzeria'  ,ilDiabolo instanceof Pizzeria);
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

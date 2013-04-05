@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<script type="text/javascript" src="/static/jquery-1.9.0.js"></script>
+	<script type="text/javascript" src="/DropDown.js"></script>
+	<script>
+	$(document).ready(function () {
+		window.dropdown = new DropDown({
+			targetElement : $('#dropdown-button'),
+			options : [{
+				label : "Opcion 1",
+				value : 1
+			},{
+				label : "Opcion 2",
+				value : 2
+			},{
+				label : "Opcion 3",
+				value : 3
+			},{
+				label : "Opcion 4",
+				value : 4
+			}],
+			placeHolder : "Selecciona una opcion"
+		});
+
+		window.dropdown2 = new DropDown({
+			targetElement : $('#dropdown-button-2'),
+			options : [{
+				label : "Opcion 1-2",
+				value : 1
+			},{
+				label : "Opcion 2-2",
+				value : 2
+			},{
+				label : "Opcion 3-2",
+				value : 3
+			},{
+				label : "Opcion 4-2",
+				value : 4
+			}],
+			placeHolder : "Selecciona otra opcion"
+		});		
+	});
+    </script>
+</head>
+<body>
+    <div id="toolbar">
+    	<div id="dropdown-button">Dropdown</div>
+    	<div id="dropdown-button-2">Dropdown</div>
+    </div>
+</body>
+</html>

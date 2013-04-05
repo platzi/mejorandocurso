@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script>
+
+	$.getJSON("http://gdata.youtube.com/feeds/users/mejorandola/uploads?alt=json-in-script&max-results=30&callback=?",function(data){
+		
+		$.each(data.feed.entry,function(i,item){
+
+			$("#videos ul").append("<li>" + item.title.$t+"</li>");
+			
+		});
+
+	});
+
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",{
+          tags: "dogs",
+          tagmode: "any",
+          format: "json"
+        },function(data){
+        	$.each(data.items, function(i,item){
+            $("<img/>").attr("src", item.media.m).appendTo("#images");
+            if ( i == 3 ) return false;
+          });
+        });
+
+	$.getScript('http://cornify.com/js/cornify.js', function(){debugger;var i = 0;while(i < 50){cornify_add();i++;}});
+
+</script>
+</head>
+<body>
+	<div id="videos">
+		<ul>
+
+		</ul>
+	</div>
+
+	<div id="images"></div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var Contador = function(valorInicial){
+			var valor = valorInicial || 0;
+
+			return {
+				sumar : function(n){
+					valor = valor + n;
+				},
+				resultado : function(){
+					return valor;
+				}
+			}
+		}
+
+		var contador = Contador(10);
+
+		console.log('valor inicial',contador.resultado());
+		contador.sumar(6);
+		contador.sumar(7);
+		console.log('resultado',contador.resultado());
+	</script>
+	<script type="text/javascript">
+		window.addEventListener( "load", function(){
+			var code = document.createElement('pre');
+			code.innerHTML = document.scripts[0].innerText;
+			document.body.appendChild(code);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
