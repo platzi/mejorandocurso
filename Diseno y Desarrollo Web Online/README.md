@@ -6,7 +6,7 @@
 <br />
 <br />
 <br />
-Puedes descargar todo el [contenido en .zip] (https://github.com/MejorandoLaClase/MejorandoCurso/blob/master/Disenoy%20Desarrollo%20Web%20Online/Compilado.zip?raw=true).
+Puedes descargar todo el [contenido en .zip] (https://github.com/mejorandolaclase/MejorandoCurso/blob/master/Diseno%20y%20Desarrollo%20Web%20Online/Compilado.zip?raw=true).
 
 Los temas desarrollados en el curso abarcaron:
 
