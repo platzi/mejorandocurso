@@ -1,7 +1,7 @@
+![Mejorandola](http://miguelnieva.com/img/frontend.jpg)
+<br />
 ## Curso de Front End 2013
 <br />
-<br />
-![Mejorandola](http://miguelnieva.com/img/cursodiseno.jpg)
 <br />
 <br />
 Los temas desarrollados en el curso abarcarán:
