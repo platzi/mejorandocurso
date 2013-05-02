@@ -1,0 +1,42 @@
+@font-face 
+  font-family: 'Freddito';
+  src:url('fonts/Freddito.eot');
+  src:url('fonts/Freddito.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Freddito.woff') format('woff'),
+    url('fonts/Freddito.ttf') format('truetype'),
+    url('fonts/Freddito.svg#Freddito') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+[data-icon]:before
+  font-family: 'Freddito'
+  content: attr(data-icon)
+  speak: none
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+
+.iconito-arrow-up, .iconito-arrow-down, .iconito-star, .iconito-star-2
+  font-family: 'Freddito'
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+
+.iconito-arrow-up:before
+  content: "\e000"
+
+.iconito-arrow-down:before
+  content: "\e001"
+
+.iconito-star:before
+  content: "\e002"
+
+.iconito-star-2:before
+  content: "\e003"
+

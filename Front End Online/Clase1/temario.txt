@@ -1,0 +1,28 @@
+Curso profesional de Frontend
+UX
+		Wireframes / Mockups
+		Diseño gráfico y UX
+		Responsive Design
+			Patrones de diseño MOBILE FIRST
+		Retina Design (diseño para resoluciones de alta densidad)
+			Vectores, CSS
+			Icon Fonts
+			Imagenes Retina
+FRONTEND
+		HTML5
+			Boilerplate
+			Jade/Swig
+		CSS3
+			less
+			sass
+			compass
+			Stylus   <-----  Pre procesador hipster de CSS3
+
+		JAVASCRIPT
+			jQuery
+			jQuery UI / jQuery Mobile / Sencha Touch
+			JS the Good Parts: OOP, patrones de diseño, JSON
+			PONY EXPRESS
+			(Mid) Backbone.js / Ember.js / Angular.js
+			UNIT TESTING
+				Jasmine.js, jsUnit

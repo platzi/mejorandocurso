@@ -4,13 +4,6 @@
 ![Mejorandola](http://miguelnieva.com/img/cursodiseno.jpg)
 <br />
 <br />
-<br />
-<br />
-Fecha de Inicio: 30 de Abril
-<br />
-[Inscríbete y obtén tu lugar.] (https://mejorando.la/cursos/frontend-online)
-<br />
-<br />
 Los temas desarrollados en el curso abarcarán:
 
 - HTML5
