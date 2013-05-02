@@ -1,6 +1,6 @@
 ![Mejorandola](http://miguelnieva.com/img/frontend.jpg)
 <br />
-## Curso de Front End Online - 2013
+## Curso de Frontend Online - 2013
 <br />
 Los temas desarrollados en el curso abarcarán:
 
@@ -14,5 +14,3 @@ Los temas desarrollados en el curso abarcarán:
 - JSON
 - Modernizr
 - Diseño y Maquetación Móvil
-
-
