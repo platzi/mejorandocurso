@@ -2,7 +2,7 @@
 <br />
 
 
-Puedes descargar todo el [contenido en .zip] (https://github.com/mejorandolaclase/MejorandoCurso/blob/master/Diseno%20y%20Desarrollo%20Web%20Online/Python/Python.zip?raw=true).
+Puedes descargar todo el [contenido en .zip] (https://github.com/mejorandolaclase/MejorandoCurso/blob/master/DisenoDesarrolloWeb/Python/Python.zip?raw=true).
 
 Desarrollo de una aplicación web utilizando el frameworkd "Django" con el lenguaje de programación "Python".
 
