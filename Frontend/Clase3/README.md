@@ -1,6 +1,6 @@
 ## Clase de Pablo Rigazzi 
 
-(http://miguelnieva.com/img/frontend.jpg)
+![Mejorandola](http://miguelnieva.com/img/frontend.jpg)
 
 Aca encontraras los archivos de bootstrap que manejamos con Pablo Rigazzi.
 
