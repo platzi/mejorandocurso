@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script>
+
+	$(function() {
+
+		$('#grito').on('pageshow', function(){
+			alert('Ay!');
+		});
+
+		$('[data-role=navbar] a').on('click', function(){
+			$.mobile.changePage($(this).attr('data-href'));
+		});
+
+		$('#botonbuscar').on('click', function(){
+			var buscar = $('#cajatexto').val();
+			$('#botonbuscar').addClass('ui-disabled');
+			$('#mensajes').html('Buscando '+buscar+' en Internet');
+
+			setTimeout(function(){
+				var res = [
+					'Javascript Avanzado',
+					'Aprendiendo Javascript',
+					'Closures for Dummies',
+					'¿Qué es un Mixin, mami?',
+					'RFTM: The Good Parts',
+				];
+
+				$('#mensajes').html('Se encontraron '+res.length+' resultados sobre '+buscar);
+				$('#botonbuscar').removeClass('ui-disabled');
+				$('[data-role=listview]').html('');
+
+				$.each(res, function(i, elem){
+					$('#listado').append('<li><a href="#">'+elem+'</a></li>');
+				});
+
+				$('#listado').listview('refresh');
+
+
+			}, 2000);
+		});
+
+	});
+
+	</script>
+</head>
+<body>
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h1>Home</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-href="#home" class="ui-btn-active">Home</a></li>
+					<li><a href="#" data-href="#buscar">Buscar</a></li>
+					<li><a href="#" data-href="#grito">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<h1>Bienvenido a Mejorando el JqueryMobile</h1>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
+
+	<!-- PAGE -->
+
+	<div data-role="page" id="buscar">
+		<div data-role="header">
+			<h1>Buscar</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-href="#home">Home</a></li>
+					<li><a href="#" data-href="#buscar" class="ui-btn-active">Buscar</a></li>
+					<li><a href="#" data-href="#grito">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<input type="text" id="cajatexto">
+				</div>
+				<div class="ui-block-b">
+					<a 	id="botonbuscar"
+						href="#" 
+						data-role="button"
+						data-icon="check"
+						data-inline="true">Buscar</a>
+				</div>
+			</fieldset>
+			<div id="mensajes"></div>
+			<br>
+			<ul id="listado"
+				data-role="listview"
+				data-inset="true">
+				<li>Item 1</li>
+				<li><a href="#">Item 2</a></li>
+				<li>Item 3 <span class="ui-li-count">87</span></li>
+				<li data-role="list-divider">Item 4</li>
+				<li>Item 5</li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
+
+	<!-- PAGE -->
+
+	<div data-role="page" id="grito">
+		<div data-role="header">
+			<h1>Grito</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-href="#home">Home</a></li>
+					<li><a href="#" data-href="#buscar">Buscar</a></li>
+					<li><a href="#" data-href="#grito"  class="ui-btn-active">Grito</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="content">
+			<h1>Grito</h1>
+		</div>
+		<div data-role="footer">
+			<a href="#" data-role="button" data-icon="plus">Agregar</a>
+			<a href="#" data-role="button" data-icon="arrow-u">Subir</a>
+			<a href="#" data-role="button" data-icon="arrow-d">Bajar</a>
+		</div>
+	</div>
+</body>
+</html>
