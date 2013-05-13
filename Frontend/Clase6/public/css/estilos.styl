@@ -1,0 +1,193 @@
+
+rosa = #FF5AA5
+azul = #22BCE0
+naranja = #DD4F24
+verde = #22BC68
+
+@import "fuentes.styl"
+
+border-radius()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
+body
+	background-color #efefef
+	font-size 15px
+	min-width 320px
+h1, h2, h3, ul, p 
+	padding 0
+	margin 0
+img
+	width 100%
+header
+	background-color #444
+	border-bottom 3px solid #2d2d2d
+	overflow hidden
+	padding 10px 0
+	position fixed
+	width 100%
+	min-width 320px
+	text-align center
+	z-index:2
+
+	#header_logo, #header_titulo, #header_user
+		display inline-block
+		vertical-align middle
+	#header_logo, #header_user
+		height 55px
+		width 55px
+	#header_logo
+		float left
+		margin-left 20px
+	#header_user
+		border #2d2d2d solid 3px
+		border-radius (40px)
+		float right
+		margin-right 10px
+		overflow hidden
+	#header_titulo
+		width 50%
+		a
+			color azul
+			text-decoration none
+		a:hover
+			color naranja
+		h2
+			color white
+			font-weight bold
+			font-size 1.1em
+		li
+			display inline
+			margin 0 0.4em 0 0
+
+#contenido
+	overflow hidden
+	padding 100px 0 0 2.3%
+
+	aside
+		background-color azul
+		border-radius (0px 0px 5px 5px)
+		height 48px
+		margin 0 2% 0 0
+		overflow hidden
+		transition:height 0.3s ease;
+		-webkit-transition:height 0.3s ease;
+
+		#aside_header
+			border-bottom 3px solid #84E0EF
+			height 35px
+			padding 10px 0 0 0
+			width 100%
+			*
+				display inline-block
+				vertical-align middle
+			span
+				font-size 2em
+				color #84E0EF
+			h3
+				color white
+				float right
+				font-weight normal
+				margin-right 10px
+
+		#aside_body
+			p
+				color white
+				font-size 0.9em
+				font-style italic
+				line-height 1.5em
+				margin 2% 5%
+	aside:hover, aside:active
+		height 210px
+
+	.contenido_item
+		background-color white
+		border solid 1px #efefef
+		border-right 4px solid azul
+		float left
+		height 175px
+		margin 1% 1% 0 0
+		overflow hidden
+		width 96%
+		transition:border-color 0.3s;
+		-webkit-transition:border-color 0.3s;
+
+		figure
+			float left
+			height 175px
+			margin 0 0.2em 0 0
+			width 155px
+		.item_info
+			height 140px
+			overflow hidden
+			h2
+				font-size 1.3em
+				color #444
+				font-weight bold
+				font-style italic
+				margin 25px 0 0 0
+			.item_posted
+				color #7a7a7a
+				margin 0.2em 0
+				a
+					color naranja
+					text-decoration none
+				a:hover
+					color azul
+			.icon-heart-2
+				color #a5a5a5
+				cursor pointer
+				font-size 1.2em
+				transition:color 0.5s;
+				-webkit-transition:color 0.5s;
+			.icon-heart-2:hover
+					color rosa
+
+		.item_extra
+			width 100%
+			.extra_tag
+				background-color azul
+				border-radius (3px)
+				color white
+				float left
+				font-size 0.9em
+				padding 0.1em 0.3em
+			.extra_likes
+				float right
+				margin 0 5px 0 0
+				position relative
+				top -6px
+				
+				*
+					display inline
+					vertical-align middle
+				a
+					text-decoration none
+					font-size 1.5em
+
+					.icon-arrow-up
+						color verde
+						position relative
+						transition:top 0.3s;
+						-webkit-transition:top 0.3s;
+					.icon-arrow-up:hover
+						top -4px
+					.icon-arrow-down
+						color naranja
+						position relative
+						transition:top 0.3s;
+						-webkit-transition:top 0.3s;
+					.icon-arrow-down:hover
+						top 4px
+				.likes_numero
+					color #a5a5a5
+	.contenido_item:hover
+		border-color azul
+	.contenido_item.extended
+		height auto
+		width 95%
+		.item_info 
+			height auto
+
+@import "responsive.styl"

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'pulse_icon';
+  src: url("../fonts/pulse_icon.eot");
+  src: url("../fonts/pulse_icon.eot?#iefix") format('embedded-opentype'), url("../fonts/pulse_icon.woff") format('woff'), url("../fonts/pulse_icon.ttf") format('truetype'), url("../fonts/pulse_icon.svg#pulse_icon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-arrow-down,
+.icon-arrow-up,
+.icon-heart,
+.icon-heart-2 {
+  font-family: 'pulse_icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-arrow-down:before {
+  content: "\e000";
+}
+.icon-arrow-up:before {
+  content: "\e001";
+}
+.icon-heart:before {
+  content: "\e002";
+}
+.icon-heart-2:before {
+  content: "\e003";
+}

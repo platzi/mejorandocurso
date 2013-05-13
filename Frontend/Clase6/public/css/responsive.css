@@ -1,0 +1,41 @@
+@media screen and (min-width:380px) {
+  body {
+    font-size: 16px;
+  }
+  header #header_logo,
+  header #header_user {
+    height: 74px;
+    width: 74px;
+  }
+  header #header_titulo h2 {
+    font-size: 1.5em;
+  }
+  #contenido .contenido_item figure {
+    margin: 0 2em 0 0;
+  }
+}
+@media screen and (min-width:768px) {
+  #contenido aside {
+    float: left;
+    height: auto;
+    margin: 0 1.5% 0 0;
+    width: 48%;
+  }
+  #contenido aside:hover {
+    height: auto;
+  }
+  #contenido .contenido_item {
+    width: 48%;
+  }
+  #contenido .item_info h2 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width:1280px) {
+  #contenido aside {
+    width: 30%;
+  }
+  #contenido .contenido_item {
+    width: 30%;
+  }
+}
