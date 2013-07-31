@@ -1,0 +1,44 @@
+La web ya no se trata de sitios web
+
+Diseño de aplicaciones web
+
+Diseño de interactividad
+
+Ejemplos de UX basados en Mejorando.la, Cristalab y Twitter
+
+Responsive Design
+
+Mobile First (instagram, Path, vine)
+
+______________
+Tech: 
+
+HTML5
+CSS3
+Javascript
+
+++++
+
+PHP
+Python/Django
+RoR
+Node.js/Express/Socket.io
+
+++++
+
+MySQL
+MongoDB
+_____________
+
+Idea -> Prototipo -> Mockup
+
+Diseño -> Imágenes -> HTML
+
+Modelo de caja
+Etiquetas HTML5
+
+Control de versiones
+
+CARPETAS NUMERADAS O FECHADAS NO FUNCIONA, NO FUNCIONA
+Si no usas control de versiones en tu empresa, estás terriblemente mal.
+
