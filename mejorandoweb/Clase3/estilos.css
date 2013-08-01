@@ -1,0 +1,253 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+a
+{
+	color: #DD4F24;
+}
+body
+{
+	background: #EFEFEF;
+	color: #4C4C4C;
+	font-family: "PT Sans", Arial;
+	font-size: 16px;
+	margin: 0;
+}
+footer
+{
+	background: #434343;
+	bottom: 0;
+	color: #A7A7A7;
+	left: 0;
+	padding: 1em 0;
+	/*position: fixed;*/
+	text-align: center;
+	width: 100%;
+}
+footer p
+{
+	margin: 0;
+}
+header
+{
+	background: #434343;
+	color: white;
+	padding: 0.5em;
+	text-align: left;
+}
+header figure, header h1
+{
+	display: inline-block;
+	vertical-align: top;
+}
+header h1
+{
+	font-size: 20px;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+	width: 60%;
+}
+header #avatar
+{
+	margin: 1em 1em 0 0;
+	float: right;
+}
+header #avatar figcaption
+{
+	background: #22BCE0;
+	display: inline-block;
+	float: right;
+	line-height: 50px;
+	height: 50px;
+	padding: 0 2px;
+}
+header #avatar figcaption:after
+{
+	font-family: "icomoon";
+	font-size: 0.7em;
+	content: "\e001";
+}
+header #avatar img
+{
+	float: left;
+	width: 50px;
+}
+header #logo img
+{
+	width: 80px;
+}
+nav
+{
+	background: #878787;
+	color: white;
+	font-size: 0.9em;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li 
+{
+	display: inline-block;
+	margin: 0 1.2em 0 0;
+	vertical-align: top;
+}
+nav ul li a 
+{
+	color:  white;
+	display: block;
+	padding: 0.5em 0;
+}
+nav #flechita_nav
+{
+	background: #22BCE0;
+}
+nav #flechita_nav a
+{
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+}
+nav #flechita_nav a:after
+{
+	content: "\e002";
+	font-family: "icomoon";
+	font-size: 0.7em;
+}
+nav #publicar_nav
+{
+	background: #DD4F24;
+	float: right;
+	margin-right: 0;
+	padding-right: 1.5em; 
+	position: relative;
+}
+nav #publicar_nav:after
+{
+	display: block;
+	color: rgba(255,255,255,0.5);
+	content: "\e004";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+nav #publicar_nav a
+{
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .datos_item
+{
+	text-align: right;
+}
+#contenido .datos_item .comentarios_item
+{
+	background: #878787;
+	border-radius: 4px;
+	color: white;
+	margin: 0 0 0 2em;
+	padding: 4px;
+	text-decoration: none;
+}
+#contenido .datos_item .guardar_item
+{
+	margin: 0 1em 0 1em;
+	text-decoration: none;
+}
+#contenido .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e003";
+	font-family: "icomoon";
+}
+#contenido .datos_item .tag_item
+{
+	background: #22BCE0;
+	border-radius: 0.5em;
+	color: white;
+	float: left;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+#contenido .item
+{
+	border-bottom: 3px #22BCE0 solid;
+	background: white;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
+}
+#contenido .item p
+{
+	color: #7A7A7A;
+	font-size: 0.9em;
+}
+#contenido .item .imagen_item
+{
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+#contenido .item .imagen_item img 
+{
+	width: 96px;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1rem;
+	padding: 0.5em 0.5em 0;
+}
+#contenido .item .titulo_item a
+{
+	color: #444;
+	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	margin: 3px 0 0 0;
+	padding: 0.4em 0;
+	position: absolute;
+	text-align: center;
+	top: 100%;
+	width: 96px;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after, 
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+}
+#contenido .item .votacion .down:after
+{
+	color: red;
+	content: "\e001";
+}
+#contenido .item .votacion .up:after
+{
+	color: green;
+	content: "\e000";
+}
+
+
+
+
+
