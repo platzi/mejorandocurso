@@ -52,7 +52,7 @@ header h1
 	font-size: 20px;
 	font-weight: normal;
 	margin: 1em 0 0 1em;
-	width: 60%;
+	width: 50%;
 }
 header #avatar
 {
@@ -146,6 +146,10 @@ nav #publicar_nav a
 	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
+}
+#bienvenida
+{
+	display: none;
 }
 #contenido
 {
@@ -246,8 +250,3 @@ nav #publicar_nav a
 	color: green;
 	content: "\e000";
 }
-
-
-
-
-
