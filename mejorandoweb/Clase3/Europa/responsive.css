@@ -1,0 +1,36 @@
+@media screen and (min-width: 768px)
+{
+	body
+	{
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	#bienvenida
+	{
+		display: block;
+		float: right;
+		margin: 0 1em;
+		padding: 0.5em;
+	}
+	#bienvenida h2
+	{
+		color: #434343;
+	}
+	#bienvenida #mensaje_registro
+	{
+		color: #aaa;
+		font-size: 0.8em;
+	}
+	#bienvenida #registro
+	{
+		background: #22BCE0;
+		color: white;
+		display: block;
+		font-size: 1.2em;
+		text-decoration: none;
+	}
+	#contenido .item:first-of-type
+	{
+		width: 55%;
+	}
+}

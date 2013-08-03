@@ -1,0 +1,32 @@
+
+
+
+
+SISTEMA DE CONTROL DE VERSIONES
+
+Archivos
+FTP ---> Hosting /public_html/
+www.fuckencio.com
+
+======
+
+Github.com (repositorio)
+Local COMMIT SYNC
+________________
+
+SVN (Subversion)
+GIT 
+
+Repositorios de código
+Github.com
+
+1. Multiples versiones del mismo código
+2. Cambios delta
+   Base de datos atómico de el código
+3. Multiples personas sobre el mismo archivo
+4. CULPA AL CULPABLE
+5. Ramas (branches)
+	* master (github.com) REPO PRINCIPAL
+	* master (fuckencio.com) REPO LOCAL
+	* 	  master (local) REPO LOCAL
+	* 	  devpony (local) --> merge --> master (local)
