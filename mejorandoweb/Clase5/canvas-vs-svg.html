@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejemplo SVG vs Canvas</title>
+		<link href="res/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			body{
+				padding: 3em;
+			}
+			canvas,
+			#svg-container{
+				border: 1px solid dodgerblue;
+			} 
+			#svg-container{
+				width: 300px;
+				height: 300px;
+			}
+			.box{
+				display: inline-block;
+				min-width: 40%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<h1>le Canvas</h1>
+			<canvas width="300" height="300">No soportas canvas!!</canvas>
+		</div>
+		<div class="box">
+			<h1>le SVG</h1>
+			<div id="svg-container"></div>
+		</div>
+
+		<!-- Raphaël.js -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<!-- Luego si tus scripts -->
+		<script src="res/js/canvas-vs-svg.js"></script>
+	</body>
+</html>

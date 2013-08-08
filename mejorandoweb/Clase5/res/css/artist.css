@@ -1,0 +1,22 @@
+body{
+	padding: 3em;
+	width: 85%;
+	margin: auto;
+	max-width: 50em;
+	box-sizing: border-box;
+}
+.form-control{
+	width: 20em;
+}
+.bio{
+	margin-top: 1em;
+}
+.loading{
+	background: #eee;
+	margin: 2em 0;
+	padding: 1em;
+	border-radius: 5px;
+	color: #555;
+	font-style: italic;
+	text-align: center;
+}

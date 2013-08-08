@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contador de Vocales</title>
+	</head>
+	<body>
+		<h1>Contador de Vocales</h1>
+		<label for="frase">Ingresa tu frase:</label>
+		<input type="text" id="frase">
+		<button id="contar">contar vocales</button>
+		<div class="resultados">
+			<div class="res">
+				A <span id="a-vocal"></span>
+			</div>
+			<div class="res">
+				E <span id="e-vocal"></span>
+			</div>
+			<div class="res">
+				I <span id="i-vocal"></span>
+			</div>
+			<div class="res">
+				O <span id="o-vocal"></span>
+			</div>
+			<div class="res">
+				U <span id="u-vocal"></span>
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<script>
+			var $frase = $('#frase'),
+				$contar = $('#contar'),
+				vocales = 'aeiou';
+
+			$frase.on('keyup', function( evt ){
+				if( evt.keyCode == '13' ){
+					contarVocales()
+				}
+			})
+			$contar.on('click', contarVocales)
+
+			function contarVocales(){
+				var frase = $frase.val(),
+					res = {a:0, e:0, i:0, o:0, u:0},
+					letra;
+
+				for(var i=0; i<frase.length; ++i){
+					letra = frase[i];
+					if( vocales.indexOf( letra ) != -1 ){
+						// res[letra] = res[letra] + 1;
+						// res[letra] += 1;
+						res[letra]++;
+					}
+				}
+
+				for( var key in res ){
+					console.log( key, res[ key ], $('#' + key + '-vocal') )
+					$('#' + key + '-vocal').text( res[ key ] )
+				}
+			}
+		</script>
+	</body>
+</html>
