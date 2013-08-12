@@ -1,0 +1,21 @@
+a{color:#00f}
+a:visited{color:#00d}
+body{color:#333;font-family:"Arial";font-size:16px;text-align:left}
+header{background:#222;border-bottom:3px solid #0af;color:#ddd;margin:0;padding:.5em;position:fixed;width:100%;}
+header img{width:100%}
+header h1{font-size:20px;font-weight:normal;margin:0;padding:0}
+header #avatar,header #logo,header #titulo_nav{display:inline-block;vertical-align:top}
+header #avatar,header #logo{height:40px;width:40px}
+header #avatar a{background:#444;display:block;margin:0;padding:3px;text-decoration:none}
+header #titulo_nav{width:70%;}
+header #titulo_nav nav a{color:#fff;border-bottom:4px solid #0af;border-left:1px solid #0af;border-right:1px solid #0af;font-size:.8em;padding:.1em 1em;text-decoration:none}
+header #titulo_nav nav a:hover{border-color:#fff}
+#contenido{padding:4em .5em;}
+#contenido .item{border:2px solid #ddd;border-radius:.5em;height:4em;margin:.5em 0 0 0;padding:.5em;}
+#contenido .item h2{font-size:16px;margin:0;padding:0}
+#contenido .item .autor{font-size:.7em;margin:-3em 0 0 15%;}
+#contenido .item .autor p{display:inline}
+#contenido .item .titulo_item,#contenido .item .votos{display:inline-block;vertical-align:top}
+#contenido .item .titulo_item{width:80%;}
+#contenido .item .titulo_item figure{float:right}
+#contenido .item .votos{text-align:center;width:14%}
