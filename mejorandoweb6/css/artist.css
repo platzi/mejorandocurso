@@ -1,0 +1,55 @@
+body {
+	padding: 3em;
+	width: 85%;
+	margin: auto;
+	max-width: 50em;
+	box-sizing: border-box;
+}
+
+.form-control {
+	width: 20em;
+}
+
+.bio {
+	margin-top: 1em;
+}
+
+.loading {
+	background: #eee;
+	margin: 2em 0;
+	padding: 1em;
+	border-radius: 5px;
+	color: #555;
+	font-style: italic;
+	text-align: center;
+}
+
+.error {
+	background: red;
+	margin: 2em 0;
+	padding: 1em;
+	border-radius: 5px;
+	color: white;
+	font-style: bold;
+	text-align: center;
+}
+
+
+.album.album-onload {
+  opacity: 0.0;
+  -webkit-transform:translate(0px, 50px);
+  transform:translate(0px, 50px);
+}
+
+.album {
+  opacity: 0.9;
+  -webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.5s ease;
+  transition: opacity 1s ease-in-out, transform 0.5s ease;
+  cursor: pointer;
+}
+
+.album:hover {
+  opacity: 1.0;
+  -webkit-transform: scale(1.2,1.2);
+  transform: scale(1.1,1.1);
+}

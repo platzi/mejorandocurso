@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora</title>
+	</head>
+	<body>
+		<h1>Calculadora</h1>
+		<label for="var-a">variable a</label>
+		<input type="text" id="var-a">
+		<select id="operador">
+			<option value="+">más</option>
+			<option value="-">menos</option>
+			<option value="*">por</option>
+			<option value="/">divido por</option>
+		</select>
+		<label for="var-b">variable b</label>
+		<input type="text" id="var-b">
+		<button id="calcular">calcular</button>
+		<input type="text" id="resultado">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			//Nuestro código
+			var $vara = $('#var-a'),
+				$varb = $('#var-b'),
+				$operador = $('#operador'),
+				$calcular = $('#calcular'),
+				$resultado = $('#resultado');
+
+			function calcular(){
+				var op, a, b, res;
+
+				a = parseInt( $vara.val() );
+				b = parseInt( $varb.val() );
+				op = $operador.val();
+
+				if( op == '+' ){
+					res = a + b
+				}else if( op == '-' ){
+					res = a - b
+				}else if( op == '*' ){
+					res = a * b
+				}else{
+					res = a / b
+				}
+
+				$resultado.val( res )
+			}
+
+		$calcular.on('click', calcular)
+		</script>
+	</body>
+</html>

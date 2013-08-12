@@ -1,0 +1,29 @@
+
+
+
+CONTROL DE VERSIONES
+
+Repositorio principal (github.com)
+	* branches (rama)
+		- master
+			(directorios, archivos)
+
+Repositorios locales
+	* branch
+		- master
+			(directorios, archivos)
+
+Servidor (www.fuckencio.com)
+	(repositorio local git)
+	SYNC
+
+ 1. Sólo suben los bytes diferentes del archivo
+ 	Cambios delta
+ 	Sistema de archivos atómico
+ 2. VERSIONES
+ 	Guarda todos los cambios por los usuarios en los commits
+ 3. CULPA
+ 
+
+Update/Sync
+Commit/Push
