@@ -1,0 +1,44 @@
+@font-face{font-family:'Freddito';src:url("fonts/Freddito.eot");src:url("fonts/Freddito.eot?#iefix") format('embedded-opentype'),url("fonts/Freddito.woff") format('woff'),url("fonts/Freddito.ttf") format('truetype'),url("fonts/Freddito.svg#Freddito") format('svg');font-weight:normal;font-style:normal}
+[data-icon]:before{font-family:'Freddito';content:attr(data-icon);speak:none;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
+.iconito-arrow-up,.iconito-arrow-down,.iconito-heart,.iconito-heart-2{font-family:'Freddito';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased}
+.iconito-arrow-up:before{content:"\e000"}
+.iconito-arrow-down:before{content:"\e001"}
+.iconito-heart:before{content:"\e002"}
+.iconito-heart-2:before{content:"\e003"}
+a{color:#00f}
+a:visited{color:#00d}
+body{background:#cbf5f5;color:#333;font-family:"Open Sans",Arial;font-size:16px;text-align:left}
+header{background:#222;border-bottom:3px solid #0af;color:#ddd;margin:0;padding:.5em;position:fixed;width:100%;}
+header img{width:100%}
+header h1{font-family:"Nunito",Arial;font-size:20px;font-weight:normal;margin:0;padding:0}
+header #avatar,header #logo,header #titulo_nav{display:inline-block;vertical-align:top}
+header #avatar,header #logo{height:40px;width:40px}
+header #avatar a{background:#444;display:block;margin:0;padding:3px;text-decoration:none}
+header #titulo_nav{width:70%;}
+header #titulo_nav nav a{color:#fff;border-bottom:4px solid #0af;border-left:1px solid #0af;border-right:1px solid #0af;font-size:.8em;padding:.1em 1em;text-decoration:none}
+header #titulo_nav nav a:hover{border-color:#fff}
+#contenido{padding:4em .5em;}
+#contenido #nota{background:#fafad6;border-radius:1em;font-size:.7em;height:1em;margin:1em;overflow:hidden;padding:2em;text-align:justify;transition:all .5s ease}
+#contenido #nota:hover{height:6em}
+#contenido .item{background:#fff;border:2px solid #ddd;border-radius:.5em;margin:.5em 0 0 0;overflow:hidden;padding:.5em;}
+#contenido .item h2{font-size:16px;margin:0;padding:0}
+#contenido .item .autor{font-size:.7em;margin:-3em 0 0 15%;}
+#contenido .item .autor p{display:inline}
+#contenido .item .autor .iconito-heart-2{color:#f66;cursor:pointer;display:inline-block;font-size:1.3em;vertical-align:middle}
+#contenido .item .autor .iconito-heart-2:hover:before{color:#ff69b4;content:"\e002"}
+#contenido .item .autor .tag{background:#80ccb2;border-radius:.5em;color:#fff;cursor:pointer;display:inline-block;font-weight:bold;padding:.5em;margin:0 0 2px 1em}
+#contenido .item .autor .tag:hover{background:#589d86}
+#contenido .item .titulo_item,#contenido .item .votos{display:inline-block;vertical-align:top}
+#contenido .item .titulo_item{width:80%;}
+#contenido .item .titulo_item figure{float:right}
+#contenido .item .votos{text-align:center;width:14%;}
+#contenido .item .votos a{text-decoration:none;transition:all 1s ease}
+#contenido .item .votos a:hover{font-size:1.3em}
+#contenido .item .votos .down{color:#ffb341}
+#contenido .item .votos .up{color:#4b8ff5}
+@media screen and (min-width:768px){#contenido #nota{float:right;font-size:1em;height:auto;width:20%}
+#contenido #nota:hover{height:auto}
+#contenido .item{display:inline-block;vertical-align:top;width:30%;}
+#contenido .item .titulo_item a{font-size:.9em;font-weight:normal}
+}@media screen and (min-width:1280px){#contenido .item{width:20%}
+}

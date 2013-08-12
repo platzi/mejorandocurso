@@ -1,0 +1,151 @@
+@import "iconos.styl"
+
+a
+	color #00F
+
+a:visited
+	color #00D 
+
+body
+	background #CBF5F5
+	color #333
+	font-family "Open Sans", Arial
+	font-size 16px
+	text-align left
+
+header
+	background #222
+	border-bottom 3px solid #0AF
+	color #DDD
+	margin 0
+	padding 0.5em
+	position fixed
+	width 100%
+
+	img
+		width 100%
+
+	h1
+		font-family "Nunito", Arial
+		font-size 20px
+		font-weight normal
+		margin 0
+		padding 0
+
+	#avatar, #logo, #titulo_nav 
+		display inline-block
+		vertical-align top
+
+	#avatar, #logo
+		height 40px
+		width 40px
+
+	#avatar a
+		background #444
+		display block
+		margin 0
+		padding 3px
+		text-decoration none
+
+	#titulo_nav 
+		width 70%
+
+		nav a
+			color white
+			border-bottom 4px solid #0AF
+			border-left 1px solid #0AF
+			border-right 1px solid #0AF
+			font-size 0.8em
+			padding 0.1em 1em
+			text-decoration none
+
+		nav a:hover
+			border-color white
+
+#contenido
+	padding 4em 0.5em
+
+	#nota
+		background #FAFAD6
+		border-radius 1em
+		font-size 0.7em
+		height 1em
+		margin 1em
+		overflow hidden
+		padding 2em
+		text-align justify
+		transition all 0.5s ease
+
+	#nota:hover
+		height 6em
+
+	.item
+		background white
+		border 2px solid #DDD
+		border-radius 0.5em
+		margin 0.5em 0 0 0
+		overflow hidden
+		padding 0.5em
+
+		h2
+			font-size 16px 
+			margin 0
+			padding 0
+
+		.autor
+			font-size 0.7em
+			margin -3em 0 0 15%
+
+			p
+				display inline
+
+			.iconito-heart-2
+				color #f66
+				cursor pointer
+				display inline-block
+				font-size 1.3em
+				vertical-align middle
+			.iconito-heart-2:hover:before
+				color hotpink
+				content "\e002"
+
+			.tag
+				background #80CCB2
+				border-radius 0.5em
+				color white
+				cursor pointer
+				display inline-block
+				font-weight bold
+				padding 0.5em
+				margin 0 0 2px 1em
+			.tag:hover
+				background #589D86
+
+		.titulo_item, .votos
+			display inline-block
+			vertical-align top
+
+		.titulo_item
+			width 80%
+
+			figure
+				float right
+
+		.votos
+			text-align center
+			width 14%
+
+			a
+				text-decoration none
+				transition all 1s ease
+
+			a:hover
+				font-size 1.3em
+
+			.down
+				color #FFB341
+
+			.up
+				color #4B8FF5
+
+@import "responsive.styl"
