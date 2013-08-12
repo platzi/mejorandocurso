@@ -1,0 +1,6 @@
+@media screen and (min-width:768px){#contenido #nota{float:right;font-size:1em;height:auto;width:20%}
+#contenido #nota:hover{height:auto}
+#contenido .item{display:inline-block;vertical-align:top;width:30%;}
+#contenido .item .titulo_item a{font-size:.9em;font-weight:normal}
+}@media screen and (min-width:1280px){#contenido .item{width:20%}
+}
