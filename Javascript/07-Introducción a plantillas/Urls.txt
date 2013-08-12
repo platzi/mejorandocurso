@@ -1,2 +1,0 @@
-Mustache.js
-http://mustache.github.com/#demo

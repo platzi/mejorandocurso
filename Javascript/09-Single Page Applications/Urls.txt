@@ -1,4 +1,0 @@
-Knockout.js
-http://knockoutjs.com/
-Mongoosejs
-http://mongoosejs.com/
