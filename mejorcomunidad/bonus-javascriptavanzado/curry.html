@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Currying de funciones</title>
+</head>
+<body>
+	<script>
+		(function(){
+			var toArray = function(x) {
+				return Array.prototype.slice.call(x);
+			}
+
+			var curry = function(fn, args) {
+				return function () {
+					return fn.apply(this, args.concat(toArray(arguments)));
+				}
+			}
+
+			var autoCurry = function(fn, numArgs) {
+				numArgs = numArgs || fn.length;
+
+				return function() {
+					if(arguments.length < numArgs) {
+						return autoCurry(
+							curry(fn, toArray(arguments)),
+							numArgs - arguments.length 
+						);
+					} else {
+						return fn.apply(this, arguments);
+					}
+				}
+			}
+
+			Function.prototype.autoCurry = function(n) {
+				return autoCurry(this, n);
+			}
+		})();
+
+		var modulo = function(divisor, dividendo) {
+			return dividendo % divisor;
+		}.autoCurry();
+
+		modulo(2, 14) // 0
+		var esImpar = modulo(2);
+
+		var filtro = function(filtro, arreglo) {
+			return arreglo.filter(filtro);
+		}.autoCurry();
+
+		filtro(esImpar, [1,2,3,4,5,6,7,8,9]);
+		filtrarImpares = filtro(esImpar);
+		filtrarImpares([1,2,3,4,5,6,7,8,9]);
+
+	</script>
+</body>
+</html>

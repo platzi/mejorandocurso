@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Haciendo Memoria. Extendiendo el lenguaje.</title>
+</head>
+<body>
+	<script>
+		Function.prototype.conMemoria = function() {
+			var func = this;
+			var memoria = [];
+
+			return function() {
+				memoria.push(arguments);
+				console.log(memoria);
+				return func.apply(this, arguments);
+			}
+		};
+	</script>
+</body>
+</html>

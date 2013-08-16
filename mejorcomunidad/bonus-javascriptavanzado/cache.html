@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funcion Caché</title>
+</head>
+<body>
+	<script>
+	Function.prototype.cache = function() {
+		var func = this;
+		var cache = {};
+
+		return function(args) {
+			if(args in cache) {
+				console.log("el resultado "+cache[args]+" es traido del cache.");
+				return cache[args];
+			} else {
+				return cache[args] = func.call(this, args);
+			}
+		}
+	}
+	</script>
+</body>
+</html>

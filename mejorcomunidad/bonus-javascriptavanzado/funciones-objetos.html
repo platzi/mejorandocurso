@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prototype: Las funciones también son objetos.</title>
+</head>
+<body>
+	<script>
+	Function.prototype.miNombreEs = function() {
+		return this.name;
+	}
+	Function.prototype.cantParams = function() {
+		return this.length;
+	}
+	function log(mensaje) { console.log(mensaje); }
+	var miLog = log;
+	miLog.miNombreEs();
+	miLog.cantParams();
+	</script>
+</body>
+</html>

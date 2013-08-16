@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones Parciales.</title>
+</head>
+<body>
+	<script>
+	var toArray = function(x) {
+		return Array.prototype.slice.call(x);
+	}
+
+	Function.prototype.partial = function() {
+		var func = this;
+		var args = toArray(arguments);
+
+		return function() {
+			return func.apply(this, args.concat(toArray(arguments)));
+		}
+	}
+
+	function filter(filtro, arreglo) {
+		return arreglo.filter(filtro);
+	}
+
+	soloImpares = filter.partial(function(elem){
+		return elem % 2;
+	});
+
+	alpha = filter.partial(function(elem){
+		return /[a-z]/.exec(elem);
+	});
+	</script>
+</body>
+</html>
