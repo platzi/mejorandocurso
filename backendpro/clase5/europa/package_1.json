@@ -1,0 +1,11 @@
+{
+  "name": "curso-backend",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~3.4.0",
+    "express.io": "~1.1.12",
+    "swig": "~1.0.0-rc2",
+    "connect-redis": "~1.4.5",
+    "underscore": "~1.5.2"
+  }
+}
