@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block title %}App{% endblock %}
+
+{% block content %}
+	<h2>Bienvenido {{ user }}</h2>
+	<a href="/log-out">Log out</a>
+	<ul id="users">
+	{% for person in users %}
+		<li>{{person}}</li>
+	{% endfor %}
+	<ul>
+{% endblock %}

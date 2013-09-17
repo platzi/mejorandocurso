@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+	<h2>Bienvenido</h2>
+	<p>Nombre de usuario</p>
+	<form method="POST" action="/log-in">
+		<input name="username" type="text">
+		<button>Log in</button>
+	</form>	
+{% endblock %}
