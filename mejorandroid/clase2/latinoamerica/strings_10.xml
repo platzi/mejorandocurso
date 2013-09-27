@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo</string>
+    
+    <string name="action_fav">Favorito</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_dialog">Enviar datos</string>
+    <string name="msg_share">Me gustó esta habitación</string>
+    <string name="msg_rate">Dejanos tu calificación</string>
+    <string name="msg_yes">Sí</string>
+    <string name="msg_no">No</string>
+    <string name="msg_recommendation">¿Nos recomendarías?</string>
+    
+    <string-array name="array_rate">
+        <item>Excelente</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+    </string-array>
+
+</resources>

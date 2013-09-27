@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:hint="@string/hint_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+        
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_add_name" />
+
+    <LinearLayout
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <ListView
+	        android:id="@+id/list_view"
+	        android:layout_weight="1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </ListView>
+		<fragment
+		    android:id="@+id/detail_fragment"
+		    android:layout_weight="2"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"	 
+		    class="com.mejorandola.ejemplo.FragmentName"
+		    tools:layout="@layout/fragment_name"   
+		    />	            
+    </LinearLayout>
+
+
+
+</LinearLayout>

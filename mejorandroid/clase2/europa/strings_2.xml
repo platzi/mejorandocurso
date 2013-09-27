@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_add_name">Ingrese un nombre</string>
+    <string name="btn_add_name">Enviar</string>
+
+</resources>

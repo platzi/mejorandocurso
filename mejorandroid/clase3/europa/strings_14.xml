@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo06</string>
+    <string name="img_description">Encabezado</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_fav">Favorito</string>
+    <string name="action_dialog">Mostrar diálogo</string>
+    <string name="msg_yes">Sí</string>
+    <string name="msg_no">No</string>
+    <string name="msg_share">Compartir usando</string>
+    <string name="msg_rate">Deja tu calificación</string>
+    <string name="msg_recommendation">¿Nos recomendarías?</string>
+    <string name="msg_front_desk">¿cómo consideras el servicio de la recepción?</string>
+    <string name="msg_front_desk_0">Malo</string>
+    <string name="msg_front_desk_100">Bueno</string>
+    <string name="dialog_title">¿Desea enviar los datos?</string>
+	<string name="title_activity_room_list">Listado de habitaciones</string>
+	<string name="list_separator_standard">Estándar</string>
+	<string name="list_separator_luxury">De lujo</string>
+		
+    <string-array name="array_rate">
+        <item>Excelente</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Deficiente</item>
+        <item>Necesita mejorar</item>
+    </string-array>
+    
+    <string-array name="array_disclaimer">
+        <item>Me hago totalmente responsable</item>
+        <item>Yo no fui!</item>
+    </string-array>
+
+    <string-array name="array_rooms_standard">
+        <item>01</item>
+		<item>101</item>
+		<item>102</item>
+		<item>203</item>
+		<item>204</item>
+		<item>206</item>
+		<item>207</item>
+		<item>208</item>
+		<item>310</item>
+		<item>311</item>
+    </string-array>    
+
+    <string-array name="array_rooms_luxury">
+		<item>301</item>
+		<item>302</item>
+    </string-array>        
+
+</resources>
