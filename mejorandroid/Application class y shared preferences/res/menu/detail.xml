@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_fav"
+        android:showAsAction="always"
+        android:icon="@drawable/rating_not_important"        
+        android:title="@string/action_fav"/>
+        
+    <item
+        android:id="@+id/action_share"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_share"
+        android:title="@string/action_share"/>
+    
+	<item android:id="@+id/three_dots_item"
+	      android:icon="@drawable/ic_action_overflow"
+	      android:title=""
+	      android:showAsAction="always">
+	      <menu>
+			<item
+		        android:id="@+id/action_dialog"
+		        android:showAsAction="never"
+		        android:title="@string/action_dialog"/>
+	      </menu>
+	</item>
+
+</menu>
