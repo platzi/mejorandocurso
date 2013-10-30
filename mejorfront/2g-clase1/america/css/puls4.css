@@ -1,0 +1,10 @@
+body{background:#e8e8e8;color:#444;font-family:Arial;font-size:16px}
+header{background:#444;color:#fff;padding:.5em;}
+header .logo{border-right:1px solid #22bce0;width:60px;}
+header .logo img{width:52px}
+header .titular{margin:0 80px 0 70px;}
+header .titular .titulo{font-size:18px;font-weight:normal;margin:0;padding:0}
+header .usuario .avatar img{width:50px;border-radius:50%}
+nav{background:#22bce0}
+.left{float:left}
+.right{float:right}
