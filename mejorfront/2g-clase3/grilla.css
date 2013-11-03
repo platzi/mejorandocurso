@@ -1,0 +1,11 @@
+#contenedor {
+  background-color: #ddd;
+  padding: 1em;
+}
+.col {
+  background-color: #aaa;
+  border: 2px solid #444;
+}
+p {
+  font-size: 24px;
+}
