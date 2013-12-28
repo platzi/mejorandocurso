@@ -1,0 +1,30 @@
+[{
+	type:1,
+	location:[4.669048,-74.057868],
+	title:"Suites real 85",
+	description:"New concept in design, comfort and service"
+},
+{
+	type:0,
+	location:[4.665412,-74.056259],
+	title:"Los Andes Hostel",
+	description:"Discover Bogota and Colombia with us"
+},
+{
+	type:0,
+	location:[4.668016,-74.058287],
+	title:"North House Hostel",
+	description:"Discover Bogota and Colombia with us"
+},
+{
+	type:2,
+	location:[4.666781,-74.055873],
+	title:"Hotel GHL Hamilton",
+	description:"Creamos experiencias"
+},
+{
+	type:2,
+	location:[4.669032,-74.054403],
+	title:"Morrison Hotel",
+	description:"Morrison Hotels offer a contemporary experience adapted to today’s demanding and versatile guests who expect and appreciate beauty, quality and natural scenery"
+}]

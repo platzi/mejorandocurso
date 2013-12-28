@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo19</string>
+    <string name="img_description">Encabezado</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_fav">Favorito</string>
+    <string name="action_dialog">Mostrar diálogo</string>
+    <string name="msg_yes">Sí</string>
+    <string name="msg_no">No</string>
+    <string name="msg_share">Compartir usando</string>
+    <string name="msg_rate">Deja tu calificación</string>
+    <string name="msg_recommendation">¿Nos recomendarías?</string>
+    <string name="msg_front_desk">¿cómo consideras el servicio de la recepción?</string>
+    <string name="msg_front_desk_0">Malo</string>
+    <string name="msg_front_desk_100">Bueno</string>
+    <string name="msg_toggle">Cambio</string>
+    <string name="msg_photo_stored_succesfull">Imagen almacenada</string>
+    <string name="dialog_title">¿Desea enviar los datos?</string>
+    <string name="dialog_store_title">¿Desea guardar la fotografía?</string>
+    <string name="dialog_select_map_type_title">Tipo de mapa</string>
+    <string name="title_tab_list">Listado</string>
+    <string name="title_tab_grid">Vista</string>
+    <string name="title_tab_map">Ubicaciones</string>
+    <string name="title_activity_main">Principal</string>
+    <string name="list_separator_standard">Estándar</string>
+    <string name="list_separator_luxury">De lujo</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Cerrar</string>
+    <string name="action_map_type">Cambiar tipo de mapa</string>
+    <string name="action_show_traffic">Mostrar información de tráfico</string>
+    <string name="action_show_all_markers">Mostrar todos los marcadores</string>
+        
+    <string-array name="array_rate">
+        <item>Excelente</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Deficiente</item>
+        <item>Necesita mejorar</item>
+    </string-array>
+    <string-array name="array_disclaimer">
+        <item>Me hago totalmente responsable</item>
+        <item>Yo no fui!</item>
+    </string-array>
+    <string-array name="array_rooms_standard">
+        <item>101</item>
+        <item>102</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+    </string-array>
+    <string-array name="array_rooms_luxury">
+        <item>301</item>
+        <item>302</item>
+        <item>303</item>
+        <item>304</item>
+        <item>305</item>
+        <item>403</item>
+        <item>407</item>
+    </string-array>
+    <string-array name="array_drawer_options">
+        <item>Listado de habitaciones</item>
+        <item>Habitaciones favoritas</item>
+        <item>Términos y condiciones</item>
+    </string-array>
+    <string-array name="map_types">
+        <item>Normal</item>
+        <item>Híbrido</item>
+        <item>Satelite</item>
+        <item>Terreno</item>
+    </string-array>
+</resources>

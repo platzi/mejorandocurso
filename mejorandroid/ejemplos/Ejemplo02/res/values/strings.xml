@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo02</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="open_activity">Abrir</string>
+    <string name="close">Cerrar</string>
+    <string name="title_activity_second">SecondActivity</string>
+
+</resources>

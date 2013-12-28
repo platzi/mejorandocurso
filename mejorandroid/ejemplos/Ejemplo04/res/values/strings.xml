@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo04</string>
+    <string name="img_description">Encabezado</string>
+    <string name="action_share">Compartir</string> 
+    <string name="action_fav">Favorito</string>
+    <string name="msg_yes">Sí</string>
+    <string name="msg_no">No</string>
+    <string name="msg_share">Compartir usando</string>    
+	<string name="msg_rate">Deja tu calificación</string>
+	<string name="msg_recommendation">¿Nos recomendarías?</string>
+	<string name="msg_front_desk">¿cómo consideras servicio de la recepción?</string>
+	<string name="msg_front_desk_0">Malo</string>
+	<string name="msg_front_desk_100">Bueno</string>
+	<string-array name="array_rate">
+		<item>Excelente</item>
+		<item>Bueno</item>
+		<item>Regular</item>
+		<item>Deficiente</item>
+		<item>Necesita mejorar</item>		
+	</string-array>			
+</resources>
