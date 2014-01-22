@@ -1,0 +1,45 @@
+
+
+SISTEMA DE CONTROL DE VERSIONES
+
+FTP no es un sistema de control de versiones
+Archivos
+FTP ---> Hosting  /public_html/index.php
+www.fuckencio.com
+
+========
+
+Github / SVN (Subversion) / TFS / Mercurial
+
+Git: Control de versiones
+Github: Web app consolida el control de versiones
+
+1. Red social de programadores
+2. Web / Apps
+3. Mucho más fácil
+========
+
+Repositorio de código
+
+1. Múltiples versiones del mismo código
+2. Cambios DELTA
+	Base de datos atómica del código
+3. Historial de cada archivo 
+4. Múltiples personas sobre el mismo archivo
+5. CULPA AL CULPABLE
+6. Ramas (branches)
+	* master (github.com) REPO PRINCIPAL
+	* master (disco duro) REPO LOCAL
+		* master
+			-- MERGE (experimento - master)
+		* experimento LOCAL
+
+	* master (servidor.com) REPO PRODUCCIÓN
+
+
+
+
+
+
+
+
