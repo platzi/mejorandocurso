@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formularios</title>
+		<style>
+			input, textarea{
+				display: block;
+				margin-top: 1em;
+			}
+			#presupuesto{
+				position: relative;
+				margin-bottom: 1.5em
+			}
+			#presupuesto + div{
+				margin-top: -2em;
+				margin-left: 9em;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Formulario de registro</h1>
+		<form>
+			<input type="text" required name="nombre" placeholder="Nombre">
+			<input type="text" required name="apellido" placeholder="Apellido">
+			<input type="email" required name="correo" placeholder="Correo electrónico">
+			<input type="email" name="segundo-correo" placeholder="Correo electrónico">
+			<input type="date" name="fecha-nacimiento" placeholder="Fecha de Nacimiento">
+			<input type="tel" name="telefono" placeholder="Teléfono">
+			<label for="presupuesto">Presupuesto de 0 a 100USD</label>
+			<input type="range" name="presupuesto" id="presupuesto" min="0" max="100" value ="0">
+			<div id="output">0</div>
+			<textarea name="comentario" placeholder="Comentarios..." rows="10"></textarea>
+			<input type="submit" value="Registrarme">
+		</form>
+		<script>
+		document.getElementById('presupuesto')
+			.addEventListener('change', function() {
+				document.getElementById('output')
+					.innerHTML = this.value
+			})
+		</script>
+	</body>
+</html>
