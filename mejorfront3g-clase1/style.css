@@ -1,0 +1,74 @@
+body{
+	background: #efc792;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+header{
+	border: 1px solid red;
+	background: #98d1e3;
+	color: white;
+	overflow: hidden;
+	padding: 1em;
+}
+
+header h1{
+	font-size: 1.6em;
+	font-weight: normal;
+	margin: 0 0 0 0.5em;
+	float: left;
+}
+
+header #logo img{
+	width: 125px;
+	border-radius: 80px;
+	float: left;
+}
+
+nav{
+	background: #eaf0be;
+	text-align: center;
+	padding: 1em;
+}
+
+nav li{
+	display: inline;
+	margin: 0 1em;
+}
+
+section{
+	font-size: 0;
+}
+
+.item {
+	width: 49%;
+	margin: 0.5%;
+	background: #b2dbbb;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 1rem;
+}
+
+.figure_item{
+	float: left;
+}
+
+.title_item, .data_item{
+
+}
+
+.figure_item img{
+	width: 213px;
+}
+
+footer{
+	background: #bdb9a1;
+	border: 1px solid red;
+	text-align: center;
+	padding: 1em;
+}
+
+footer p{
+	margin: 0.5em 0;
+}
+
