@@ -1,0 +1,179 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Efectos CSS3</title>
+	<link href="imagenes/logo.gif" type="image/x-icon" rel="shortcut icon" />
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/efectos.css">
+
+	<script src="js/modernizr.custom.31855.js"></script>
+
+
+</head>
+<body>
+	<header>
+
+		<!--
+		<nav>
+			<ul>
+				<li>
+					<div class="menu menu_1">
+						<ul>
+							<li><a href="#desenfoque">Desenfoque</a></li>
+							<li><a href="#brillo">Brillo</a></li>
+							<li id="sub_contraste"><a href="#contraste">Contraste</a></li>
+							<li><a href="#escalagrises">Escala de Grises</a></li>
+							<li>Efectos Fotográficos</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="menu menu_2">
+						<ul>
+							<li><a href="#esquina">Esquina</a></li>
+							<li><a href="#sombra">Sombra</a></li>
+							
+							<li>Efectos CSS3</li>
+						</ul>
+					</div>
+
+				</li>
+				<li>
+					
+					<div class="menu menu_3">
+						<ul>
+							<li>Animaciones Keyframe</li>
+
+							<li><a href="#keybote">Bote</a></li>
+							<li><a href="#keygiro">Giro</a></li>
+							
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		-->
+		<!-- <h1>Efectos CSS3</h1><h2>@JoseCodFacilito</h2>  -->
+	</header>
+	
+
+	<section id="EfectosImagenes">
+		<article>
+			<h2>Efectos Fotográficos</h2>
+			
+			<figure id="desenfoque">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="blur" alt="">
+				<figcaption>Efecto Desenfoque<p>-webkit-filter: blur(px);</p></figcaption>
+			</figure>
+
+			<figure id="brillo">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="brightness" alt="">
+				<figcaption>Efecto Brillo<p>-webkit-filter:brightness(N);</p></figcaption>
+			</figure>
+
+			<figure id="contraste">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="contrast" alt="">
+				<figcaption>Efecto Contraste<p>-webkit-filter:contrast(N);</p></figcaption>
+			</figure>
+
+			<figure id="escalagrises">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="grayscale" alt="">
+				<figcaption>Efecto Gris<p>-webkit-filter: grayscale(%);</p></figcaption>
+			</figure>
+
+			<figure id="rotacolor">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="huerotate" alt="">
+				<img src="ruedacolor.png" class="" alt="">
+				<figcaption>Efecto Rotar Color<p>-webkit-filter: hue-rotate(deg);</p></figcaption>
+			</figure>
+
+			<figure id="inversion">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="invert" alt="">
+				<figcaption>Efecto Inversión<p>-webkit-filter: invert(%);</p></figcaption>
+			</figure>
+
+
+			<figure id="opacidad">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="opactity" alt="">
+				<figcaption>Efecto Opacidad<p>-webkit-filter: opacity(%);</p></figcaption>
+			</figure>
+
+			
+			<figure id="saturacion">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="saturate" alt="">
+				<figcaption>Efecto Saturación<p>-webkit-filter:saturate(N);</p></figcaption>
+			</figure>
+
+
+			<figure id="sepia">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="sepia" alt="">
+				<figcaption>Efecto Sepia<p>-webkit-filter: sepia(%);</p></figcaption>
+			</figure>
+
+			<figure id="combinado">
+				<img src="imagen.jpg" alt="">
+				<img src="imagen.jpg" class="combinaciones" alt="">
+				<figcaption>Combinaciones</p></figcaption>
+			</figure>
+
+			<video controls width="570" height="321" class="video-filter" id="video">
+				<source src="video.mp4" video/mp4; codecs="avc.h264,avc.42E01E,mp4a.40.2"/>
+			</video>
+			
+		</article>
+	</section>
+
+	<section id="Efectos_CSS">
+		<article>
+			<h2>Efectos CSS3 (hover-before)</h2>
+				
+			<div id="esquina" class="esquina_pagina"><p>Esquina Página</p></div>
+
+			<div class="triangulo"><p>Triangulo Lateral</p></div>
+
+			<div class="triangulo_fijo"><p>Triangulo Fijo</p></div>
+			
+			<div class="sombra_fija"><p>Sombra Fija</p></div>
+			
+			<div id="sombra" class="sombra_movil"><p>Sombra Movil</p></div>
+		
+		</article>
+	</section>
+
+	<section id="EtiquetasTexto">
+		<article>
+			<h2>Animaciones con @keyframes</h2>
+				
+			<div id="keybote" class="bote"><p>Bote</p></div>
+
+			<div class="intermitente"><p>Intermitente</p></div>
+			
+			<div class="doble_click"><p>DobleClick</p></div>
+
+			<div class="chicle"><p>Chicle</p></div>
+			
+			<div class="balanceo"><p>Balanceo</p></div>
+
+			<div id="keygiro" class="girar"><p>Giro</p></div>
+			
+			<div class="onda"><p>Onda</p></div>
+			
+			<div class="botar_basura"><p>BotarBasura</p></div>
+			
+		</article>
+	</section>
+
+</body>
+</html>
