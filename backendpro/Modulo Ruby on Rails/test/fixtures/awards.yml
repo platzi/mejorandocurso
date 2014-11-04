@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: MyString
+  year: 1
+  winnable_id: 1
+  winnable_type: MyString
+
+two:
+  name: MyString
+  category: MyString
+  year: 1
+  winnable_id: 1
+  winnable_type: MyString

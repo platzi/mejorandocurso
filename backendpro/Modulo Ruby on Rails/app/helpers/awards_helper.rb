@@ -1,0 +1,2 @@
+module AwardsHelper
+end

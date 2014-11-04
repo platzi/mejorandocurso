@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  release_year: 1
+  trailer_url: MyString
+  poster_url: MyString
+
+two:
+  title: MyString
+  description: MyText
+  release_year: 1
+  trailer_url: MyString
+  poster_url: MyString
